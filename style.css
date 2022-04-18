@@ -18,7 +18,8 @@ body {
 }
 
 main{
-  background: url(images/background.svg);
+  /* Adiciono a imagem de background não repetindo a imagendo, centralizando e cobrindo toda a tela do dispositivo*/
+  background: url(images/background.svg) no-repeat center/cover;
   width: 375px;
   height: 812px;
 }
