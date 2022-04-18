@@ -17,11 +17,13 @@ body {
   place-items: center;
 }
 
-main{
-  /* Adiciono a imagem de background não repetindo a imagendo, centralizando e cobrindo toda a tela do dispositivo*/
+main {
+  /* Adiciono a imagem de background não repetindo a imagem, centralizando e cobrindo toda a tela do dispositivo */
   background: url(images/background.svg) no-repeat center/cover;
+  /* Preenche toda largura */
   width: 100vw;
   min-height: 812px;
+  /* Preenche toda altura */
   height: 100vh;
 }
 
@@ -93,4 +95,20 @@ ul {
   /* Alinho ao centro a lista. Sò posso usar o "justify-content" por conta do "display: flex" */
   justify-content: center;
 
+}
+
+@media (min-width: 720px) {
+  main {
+    background: url(images/background_desktop.svg) no-repeat center/cover;
+    background-color: black;
+    min-height: 820px;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  ul {
+    margin-top: 1.5rem;
+  }
 }
