@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  /* Criando variável de cores grey e black */
+  --grey: hsl(240, 3%, 80%);
+  --black: hsl(240, 6%, 13%);
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main{
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey)
+}
+
+.avatar {
+  width: 10rem;
+  /* Alinhando margem. Top Button Right Left */
+  margin: 11.5rem auto 0;
+  /* Com o position relative a foto do avatar vira o limite do selo */
+  position: relative;
+}
+   /* Procura na div avatar o span que está dentro  */
+.avatar span {
+  /* Coloca o selo em cima da foto de perfil */
+  position: absolute;
+  /* Subo o selo de posição */
+  top: -15px;
+  /* Profundiade*/
+  z-index: 1;
+}
+
+/* Na div avatar eu seleciono a tag img de primeiro nível. No arquivo html tenho outra tag img dentro da div span. Assim seleciono apenas a foto de perfil */
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  margin-top: 0.5rem;
+  /* adapto a imagem dentro da largura e altura que defini nas linhas acima*/
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.09rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none; 
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  /* Removo os pontos da lista ordenada */
+  list-style: none;
+  padding: 0;
+ /* Faço com que a lista fique na horizontal */
+  display: flex;
+  /* Adiciono espaço entre os itens da lista */
+  gap: 0.5rem;
+  /* Alinho ao centro a lista. Sò posso usar o "justify-content" por conta do "display: flex" */
+  justify-content: center;
+
+}
