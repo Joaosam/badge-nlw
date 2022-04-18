@@ -30,7 +30,7 @@ function getGitHubUserInfo() {
       userName.textContent = responseApiJson.name
       userBio.textContent = responseApiJson.bio
       userLogin.textContent = responseApiJson.login
-      userUrlGithub.href = responseApiJson.url
+      userUrlGithub.href = responseApiJson.html_url
       userPhoto.src = responseApiJson.avatar_url
     })
 }
