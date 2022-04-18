@@ -97,18 +97,11 @@ ul {
 
 }
 
+/* Media Queries - {Funciona como condição, só cairá aqui caso a tela tenha no mínimo 960px de largura} */
 @media (min-width: 720px) {
   main {
     background: url(images/background_desktop.svg) no-repeat center/cover;
     background-color: black;
     min-height: 820px;
-  }
-
-  p {
-    margin-top: 1rem;
-  }
-
-  ul {
-    margin-top: 1.5rem;
   }
 }
