@@ -106,6 +106,7 @@ ul {
   }
 }
 
+/* Incluindo e alterando cor nas bordas da lista. Além disso damos um zoom no item selecionado*/
 li a {
   transition: 0.3s;
   display: inline-block;
@@ -122,36 +123,14 @@ li a:hover {
   background-color: #FFAD30;
 }
 
-/* Stamp Animation Rocketseat */
-
-@-webkit-keyframes animation {
-  0% {
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  100% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
+/* Looping no selo */
+.avatar span {
+  animation: rotating 3s infinite;
 }
 
-@keyframes animation {
-  0% {
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  100% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
+@keyframes rotating {
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+  }  
 }
