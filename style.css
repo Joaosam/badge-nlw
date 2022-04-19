@@ -48,7 +48,7 @@ main {
   /* Coloca o selo em cima da foto de perfil */
   position: absolute;
   /* Subo o selo de posição */
-  top: -15px;
+  top: -10px;
   /* Profundiade*/
   z-index: 1;
 }
@@ -92,7 +92,7 @@ ul {
   display: flex;
   /* Adiciono espaço entre os itens da lista */
   gap: 0.5rem;
-  /* Alinho ao centro a lista. Sò posso usar o "justify-content" por conta do "display: flex" */
+  /* Alinho ao centro a lista. Só posso usar o "justify-content" por conta do "display: flex" */
   justify-content: center;
 
 }
@@ -100,8 +100,58 @@ ul {
 /* Media Queries - {Funciona como condição, só cairá aqui caso a tela tenha no mínimo 960px de largura} */
 @media (min-width: 960px) {
   main {
-    background: url(images/background_desktop.svg) no-repeat center/cover;
+    background: url(images/background_desktop.svg) center/cover;
     background-color: black;
     min-height: 820px;
+  }
+}
+
+li a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+li a {
+  transition: 0.5s;
+  transform: scale(1);
+  background-color: #FF217C
+}
+
+li a:hover {
+  transform: scale(1.2);
+  background-color: #FFAD30;
+}
+
+/* Stamp Animation Rocketseat */
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes animation {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
