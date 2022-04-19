@@ -97,15 +97,6 @@ ul {
 
 }
 
-/* Media Queries - {Funciona como condição, só cairá aqui caso a tela tenha no mínimo 960px de largura} */
-@media (min-width: 960px) {
-  main {
-    background: url(images/background_desktop.svg) center/cover;
-    background-color: black;
-    min-height: 820px;
-  }
-}
-
 /* Incluindo e alterando cor nas bordas da lista. Além disso damos um zoom no item selecionado*/
 li a {
   transition: 0.5s;
@@ -121,7 +112,7 @@ li a:hover {
 
 /* Looping no selo */
 .avatar span {
-  animation: rotating 3s infinite;
+  animation: rotating 5s linear infinite;
 }
 
 @keyframes rotating {
@@ -129,4 +120,13 @@ li a:hover {
     transform: rotate(1turn);
     -webkit-transform: rotate(1turn);
   }  
+}
+
+/* Media Queries - {Funciona como condição, só cairá aqui caso a tela tenha no mínimo 960px de largura} */
+@media (min-width: 960px) {
+  main {
+    background: url(images/background_desktop.svg) center/cover;
+    background-color: black;
+    min-height: 820px;
+  }
 }
