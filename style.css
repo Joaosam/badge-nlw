@@ -110,14 +110,12 @@ ul {
 li a {
   transition: 0.3s;
   display: inline-block;
-}
-
-li a {
   transition: 0.5s;
   transform: scale(1);
   background-color: #FF217C
 }
 
+/* Ação para quando o mouse pousar em cima de um dos itens da lista*/
 li a:hover {
   transform: scale(1.2);
   background-color: #FFAD30;
