@@ -108,10 +108,8 @@ ul {
 
 /* Incluindo e alterando cor nas bordas da lista. Além disso damos um zoom no item selecionado*/
 li a {
-  transition: 0.3s;
-  display: inline-block;
   transition: 0.5s;
-  transform: scale(1);
+  display: inline-block;  
   background-color: #FF217C
 }
 
