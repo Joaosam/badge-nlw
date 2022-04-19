@@ -1,5 +1,5 @@
 <h1 align="center">
-  Crachá Virtual
+  Virtual Badge
 </h1>
 
 <p align="center">
